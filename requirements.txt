@@ -1,0 +1,4 @@
+git+ssh://git@github.com/mawdoo3/microservice@v2.2.0#egg=microservice
+git+ssh://git@github.com/mawdoo3/arabic-analysis@v4.0.0#egg=arabic-analysis
+git+ssh://git@github.com/kpu/kenlm#egg=kenlm
+-e .

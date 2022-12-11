@@ -1,0 +1,16 @@
+syntax = "proto3";
+//import "google/protobuf/any.proto";
+
+service utterance_segmentation {
+  rpc chunk(USRequest) returns (USResponse);
+}
+
+message USRequest {
+  string text = 1;
+  string segmenter_type = 2;
+  bool parse_ssml = 3;
+}
+
+message USResponse {
+  repeated string text = 1;
+}
